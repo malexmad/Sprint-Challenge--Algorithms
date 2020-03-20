@@ -111,14 +111,12 @@ class SortingRobot:
                 if self.compare_item() == 1:
                    self.swap_item()
 
-            # from the end of the list go left by until an index value = 'None'
+            # from the end of the list go left by 1 until an index value = 'None'
             while self.compare_item() != None:
                 self.move_left()
 
-            # swap the the item with 'nooe
+            # swap the the item with 'None' , repeat main while loop process starting from the next index to the right
             self.swap_item()
-
-            # repeat main while loop process starting from the next index
             self.move_right()
 
         # print(self._time)
